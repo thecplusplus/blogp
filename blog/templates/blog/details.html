@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="row pt-3 pb-3">
+        <div class="">
+
+        </div>
+        <div class="col-12">
+            <h1><strong><em>{{blog.title}}</em></strong></h1>
+        </div>
+        <div class="">
+
+        </div>
+    </div>
+        <div class="row pt-3 pb-3">
+            <div class="">
+
+            </div>
+            <div class="col-12">
+                <p class="text-muted">{{blog.ques_expand}}</p>
+            </div>
+            <div class="">
+
+            </div>
+        </div>
+<hr />
+
+<div class="row">
+    <div class="">
+
+    </div>
+    <div class="col-12" align="center">
+        <textarea rows="35" cols="100" style="background-color:#f0f0f0;">
+            {{blog.body}}
+        </textarea>
+    </div>
+    <div class="">
+
+    </div>
+</div>
+    
+{% endblock %}

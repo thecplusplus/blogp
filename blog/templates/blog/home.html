@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{%block content%}
+
+<div class="row">
+<div class="col-2">
+
+</div>
+<div class="col-8 pt-3 pb-3">
+    <h1><strong><em>Must do coding problems topic-wise</em></strong></h1>
+</div>
+<div class="col-2">
+
+</div>
+</div>
+<hr/>
+
+    {% for blog in blog.all %}
+<div class="row">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8 pt-3 pb-3" onclick="window.location='{% url 'details' blog.id %}';" style="cursor: pointer;">
+        <h5>
+            
+                {{blog.title}}
+            </a>
+            
+        </h5>
+        <hr />
+    </div>
+    <div class="col-2">
+
+    </div>
+</div>
+
+    {% endfor %}
+{% endblock %}
